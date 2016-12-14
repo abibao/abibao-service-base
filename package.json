@@ -1,25 +1,40 @@
 {
   "name": "abibao-service-user",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "MIT",
+  "description": "A mesh base for Abibao",
+  "main": "metrics.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./start.sh"
+    "start": "node srv/start.js",
+    "lint": "lab test -dL",
+    "test": "echo 'No test'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abibao/abibao-service-user.git"
   },
-  "author": "gperreymond",
-  "license": "ISC",
+  "author": "Gilles Perreymond (https://github.com/gperreymond)",
   "bugs": {
     "url": "https://github.com/abibao/abibao-service-user/issues"
   },
   "homepage": "https://github.com/abibao/abibao-service-user#readme",
+  "keywords": [
+    "abibao",
+    "metrics",
+    "vidi",
+    "microservices",
+    "seneca"
+  ],
   "dependencies": {
     "seneca": "3.2.2",
-    "seneca-balance-client": "0.6.0",
+    "seneca-balance-client": "0.6.x",
     "seneca-mesh": "0.9.0"
+  },
+  "devDependencies": {
+    "code": "4.0.0",
+    "eslint-config-seneca": "3.0.0",
+    "eslint-plugin-hapi": "4.0.0",
+    "eslint-plugin-standard": "2.0.1",
+    "lab": "11.2.1"
   }
 }
