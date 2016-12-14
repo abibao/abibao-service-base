@@ -1,2 +1,2 @@
 # abibao-service-base
-Automatic service discovery within the microservice network. (based on seneca)
+A mesh base for abibao service
