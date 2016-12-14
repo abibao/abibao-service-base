@@ -1,23 +1,8 @@
 {
-  "name": "abibao-service-user",
+  "name": "abibao-service-base",
   "version": "1.0.0",
   "license": "MIT",
   "description": "A mesh base for Abibao",
-  "main": "metrics.js",
-  "scripts": {
-    "start": "node srv/start.js",
-    "lint": "lab test -dL",
-    "test": "echo 'No test'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abibao/abibao-service-user.git"
-  },
-  "author": "Gilles Perreymond (https://github.com/gperreymond)",
-  "bugs": {
-    "url": "https://github.com/abibao/abibao-service-user/issues"
-  },
-  "homepage": "https://github.com/abibao/abibao-service-user#readme",
   "keywords": [
     "abibao",
     "metrics",
@@ -25,6 +10,21 @@
     "microservices",
     "seneca"
   ],
+  "main": "metrics.js",
+  "scripts": {
+    "lint": "lab test -dL",
+    "test": "echo 'No test'",
+    "start": "node srv/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abibao/abibao-service-base.git"
+  },
+  "author": "Gilles Perreymond (https://github.com/gperreymond)",
+  "bugs": {
+    "url": "https://github.com/abibao/abibao-service-base/issues"
+  },
+  "homepage": "https://github.com/abibao/abibao-service-base#readme",
   "dependencies": {
     "seneca": "3.2.2",
     "seneca-balance-client": "0.6.x",
